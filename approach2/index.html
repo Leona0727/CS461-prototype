@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Checker - zxcvbn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Password Strength Checker</h2>
+        <p>This version uses the zxcvbn library.</p>
+
+        <input type="password" id="password"
+            placeholder="Enter password">
+
+        <button onclick="checkPassword()">Check Password</button>
+
+        <h3 id="result">Result: -</h3>
+
+        <p id="score">Score: -</p>
+        <p id="feedback">Feedback: -</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
